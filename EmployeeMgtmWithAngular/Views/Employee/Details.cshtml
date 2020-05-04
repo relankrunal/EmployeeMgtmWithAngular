@@ -1,0 +1,17 @@
+﻿@model EmployeeMgtmWithAngular.ViewModel.EmployeeViewModel
+@{
+    //give the relative path of layout page;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Employee Details";
+}
+
+
+<h3>
+    @Model.PageTitle
+</h3>
+
+<div> Name: @Model.Employee.Name</div>
+<div> Department: @Model.Employee.DepartmentName </div>
+<div> Email: @Model.Employee.City </div>
+
+<script src="~/js/Custom.js"></script>

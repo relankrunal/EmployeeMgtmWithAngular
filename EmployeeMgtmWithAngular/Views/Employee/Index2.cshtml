@@ -1,0 +1,28 @@
+﻿@model IEnumerable< EmployeeMgtmWithAngular.Models.Employee>
+
+@{
+    //give the relative path of layout page;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Employee List";
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>Id </th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EmployeeId </td>
+                <td>@item.Name </td>
+                <td>@item.DepartmentName </td>
+            </tr>
+        }
+    </tbody>
+</table>
